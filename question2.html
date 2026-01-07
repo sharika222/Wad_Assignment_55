@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Interactive Quiz</title>
+</head>
+<body>
+
+<h2>Interactive Quiz</h2>
+
+<p>What is the short form of 'Web Application Development'?</p>
+
+<input type="text" id="ans">
+<button onclick="check()">Submit</button>
+
+<p id="msg"></p>
+
+<script>
+    function check() {
+        var answer = document.getElementById("ans").value;
+
+        if (answer == "WAD" || answer == "wad") {
+            document.getElementById("msg").innerText = "Correct!";
+        } else {
+            document.getElementById("msg").innerText = "Incorrect. Correct answer is WAD.";
+        }
+    }
+</script>
+
+</body>
+</html>
